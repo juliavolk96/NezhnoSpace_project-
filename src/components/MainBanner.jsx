@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from './Carousel';
-import introImage from '../images/intro.png'; 
 
 function MainBanner() {
   const carouselItems = [
@@ -42,16 +41,6 @@ function MainBanner() {
     'я часто испытываю чувство вины, даже если ситуация от меня не зависит',
     'я не понимаю сигналы тела (усталость, голод, сытость)'],
   ];
-  const introWrapStyles = {
-    position: 'relative',
-    backgroundImage: `url(${introImage})`,
-    backgroundRepeat: 'no-repeat',
-    top: '-144px',
-    right: '-14.5%',
-    left: 'auto',
-    minWidth: '336px',
-    minHeight: '468px',
-  };
 
   return (
     <main className="main">
@@ -60,7 +49,7 @@ function MainBanner() {
       <div className="bg_item bg_item_3"></div>
       <div className="bg_item bg_item_4"></div>
       <div className="container main_cnt intro">
-        <div className="banner_main_width intro_wrap" style={introWrapStyles}>
+        <div className="banner_main_width intro_wrap">
           <h1 className="intro_title">Здравствуй, <span>это Нежно Space</span></h1>
           <p className="intro_subtitle">Платформа психологической поддержки на&nbsp;основе Искусственного Интеллекта. Мы&#160;здесь, чтобы помочь справиться с&#160;расстройством пищевого поведения и&#160;выгоранием. Наши&#160;алгоритмы формируют подборку упражнений с&#160;учетом твоих конкретных тревог и&#160;сложностей.</p>
         </div>
