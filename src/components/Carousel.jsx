@@ -68,7 +68,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="intro_anxiety-slider">
+    <div className="intro_anxiety-slider my-carousel">
       <Slider {...settings}>
         {carouselItems.map((itemGroup, index) => (
           <div key={index} className="it_bothers_me_item">

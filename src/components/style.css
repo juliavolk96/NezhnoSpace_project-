@@ -576,6 +576,7 @@ section {
   cursor: pointer;
   z-index: 1;
 }
+
 .slider_sliders .slick-arrow.slick-prev {
   transform: rotate(180deg);
   top: 46%;
@@ -636,14 +637,14 @@ section {
 .slider_sliders .slick-dots li {
   width: 10px;
 }
-.slider_sliders .slick-dots button::before {
-  font-size: 10px;
-  color: rgba(141, 154, 206, 0.2);
-  opacity: 1;
+.my-carousel .slider_sliders .slick-dots button::before {
+  font-size: 10px !important;
+  color: rgba(141, 154, 206, 0.2) !important;
+  opacity: 1 !important;
 }
-.slider_sliders .slick-dots li.slick-active button::before {
-  color: #7264aa;
-  opacity: 1;
+.my-carousel .slider_sliders .slick-dots li.slick-active button::before {
+  color: #7264aa !important;
+  opacity: 1 !important;
 }
 .it_bothers_me_item {
   width: 1075px;
