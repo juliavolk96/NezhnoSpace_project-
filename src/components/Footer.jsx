@@ -17,6 +17,7 @@ function Footer(props) {
           <div className="center-footer">
             <div className="footer-documents">
               <a href="privacy-politic">Политика конфиденциальности</a>
+              <br />
               <a href="contract">Договор публичной оферты</a>
             </div>
             <ul>

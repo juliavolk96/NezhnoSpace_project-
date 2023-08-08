@@ -28,13 +28,13 @@ function PriceBanner() {
   return (
     <section className="subscriptions" id="subscriptions">
       <div className="subscriptions_wrap">
-        <h2 className="subscriptions_title">Мне поможет:</h2>
+        <h2 className="subscriptions_title">Начни заботиться о себе с Нежно:</h2>
         <div className="subscription_cnt">
           <ul className="subscriptions_list">
             {subscriptionOptions.map((option) => (
               <li key={option.paymentId} className="subscriptions_item">
                 <div className="subscriptions_item-wrap">
-                  <p className="subscriptions_item-title">Начни заботиться о себе с Нежно</p>
+                  <p className="subscriptions_item-title"></p>
                   <div className="subscriptions_item-info">
                     <span className="subscriptions_item-duration">{option.duration}</span>
                     <span className="subscriptions_item-price">{option.price}</span>

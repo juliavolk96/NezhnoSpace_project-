@@ -1,5 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Carousel = () => {
   const carouselItems = [
@@ -58,20 +60,25 @@ const Carousel = () => {
 
   const settings = {
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // adaptiveHeight: true,
   };
 
   return (
     <div className="intro_anxiety-slider my-carousel">
-      <Slider {...settings}>
+      <Slider className='slider_sliders'{...settings}>
         {carouselItems.map((itemGroup, index) => (
           <div key={index} className="it_bothers_me_item">
             {itemGroup.map((item, i) => (
-              <span key={i}>{item}</span>
+              <div key={i}>
+                <span>{item}</span>
+              </div>
             ))}
           </div>
         ))}

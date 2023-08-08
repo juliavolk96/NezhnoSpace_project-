@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet';
 import Header from './components/Header.jsx';
 import MainBanner from './components/MainBanner.jsx';
 import Footer from './components/Footer.jsx';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import './components/style.css';
 import './components/mediaStyle.css';
 
