@@ -2,6 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from './components/Header.jsx';
 import MainBanner from './components/MainBanner.jsx';
+import About from './components/About.jsx';
+import LessMore from './components/LessMore.jsx';
+import Reviews from './components/Reviews.jsx';
 import Footer from './components/Footer.jsx';
 import './components/style.css';
 import './components/mediaStyle.css';
@@ -22,6 +25,9 @@ function App() {
       </Helmet>
       <Header menuItems={menuItems} />
       <MainBanner />
+      <About />
+      <LessMore />
+      <Reviews />
       <Footer menuItems={menuItems} />
     </div>
   );

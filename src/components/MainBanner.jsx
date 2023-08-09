@@ -25,25 +25,13 @@ function MainBanner() {
         </div>
       </div>
       <div className="intro_anxiety">
-        <h2 className="banner_main_width intro_anxiety-title">
-          Меня тревожит:
-        </h2>
+        <h2 className="banner_main_width intro_anxiety-title">Меня тревожит:</h2>
         <div className="intro_anxiety-slider">
-          <div className="slider_sliders slick-initialized slick-slider slick-dotted">
-            <div className="slick-list draggable">
-              <div className="slick-track">
-                <Carousel />
-              </div>
-            </div>
-            <button className="slick-prev slick-arrow" aria-label="Previous" type="button" aria-disabled="false">Previous</button>
-            <button className="slick-next slick-arrow" aria-label="Next" type="button" aria-disabled="false">Next</button>
-          </div>
+          <Carousel />
         </div>
       </div>
       <div className="intro_link-wrap">
-        <a href="auth" target="_blank">
-          Хочу разобраться в этом!
-        </a>
+        <a href="confirm-anxiety">Хочу разобраться в этом!</a>
       </div>
       <PriceBanner />
     </main>
