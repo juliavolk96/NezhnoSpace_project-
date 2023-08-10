@@ -39,7 +39,7 @@ function Carousel() {
   };
 
   return (
-    <div className="intro_anxiety-slider">
+    <div>
       <Slider className="slider_sliders" {...settings}>
         {carouselItems.map((itemGroup, index) => (
           <div key={index} className="it_bothers_me_item">

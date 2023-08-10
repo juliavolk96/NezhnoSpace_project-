@@ -144,7 +144,647 @@
   color: inherit;
 }
 
+/*Main*/
+section {
+  position: relative;
+}
 
+.main {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.bg_item {
+  width: 500px;
+  height: 250px;
+
+  position: absolute;
+  animation: cube 12s ease-in forwards infinite;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  filter: blur(200px);
+  animation-duration: 25s;
+}
+
+.bg_item_1 {
+  top: -50vh;
+  left: -45vw;
+  background-color: #7264aa;
+  animation-name: bg_item_1;
+}
+
+.bg_item_2 {
+  top: 50vh;
+  left: 35vw;
+  background-color: #bfa4ce;
+  animation-name: bg_item_2;
+}
+
+.bg_item_3 {
+  background-color: #7264aa;
+}
+
+.bg_item_4 {
+  background-color: #bfa4ce;
+}
+
+
+.intro {
+  margin: 0 auto;
+  /* margin-bottom: 48px; */
+}
+
+.intro_wrap {
+  position: relative;
+  padding-top: 300px;
+  margin-bottom: 48px;
+}
+
+.intro_wrap::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  content: "";
+  min-width: 396px;
+  max-width: 396px;
+  height: 290px;
+  background-image: url("../images/intro-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.intro_title {
+  text-align: center;
+  font-family: "Ubuntu Condensed";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #111111;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.intro_subtitle {
+  max-width: 360px;
+  margin: 0 auto;
+  /* text-align: center; */
+  text-align: justify;
+  font-size: 13px;
+  line-height: 16px;
+  color: #111111;
+}
+
+.intro_subtitle > span {
+  display: block;
+  cursor: pointer;
+}
+
+.intro_anxiety {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.intro_anxiety-title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: "Ubuntu Condensed";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.intro_link-wrap {
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 16px;
+}
+
+.intro_link-wrap > a {
+  position: relative;
+  padding: 16px 40px 16px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background: #421dd8;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-image: none;
+  background-size: auto;
+  border: 2px solid #421dd8;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-image: url("../images/white_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 90% center;
+}
+
+.main_learn_more {
+  font-size: 16px;
+}
+
+
+
+
+/*Slider*/
+
+.slider_buttons {
+  display: none;
+}
+
+.slider_sliders .slick-arrow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 58%;
+  background-color: transparent;
+  background-image: url("../images/black_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  cursor: pointer;
+  z-index: 1;
+}
+.slider_sliders .slick-arrow.slick-prev {
+  transform: rotate(180deg);
+  top: 46%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .slider_sliders {
+  width: 1100px;
+  margin: 0 auto;
+}
+.slider_sliders .slick-list{
+  height: 220px;
+} */
+
+.slider_sliders {
+  display: flex;
+  /* width: 100%; */
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.slider_sliders .slick-list {
+  height: 100%;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.slider_sliders .slick-dots {
+  bottom: -20px;
+}
+.slider_sliders .slick-dots li {
+  width: 10px;
+}
+.slider_sliders .slick-dots button::before {
+  font-size: 10px;
+  color: rgba(141, 154, 206, 0.2);
+  opacity: 1;
+}
+.slider_sliders .slick-dots li.slick-active button::before {
+  color: #7264aa;
+  opacity: 1;
+}
+
+/*Slider-toggle??*/
+
+.slider_toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.slider_toggle > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider_toggle > span + span {
+  margin-left: 6px;
+}
+.slider_toggle > span.active {
+  background: #7264aa;
+}
+
+.it_bothers_me_item {
+  width: 1075px;
+  height: 100%;
+  text-align: center;
+}
+
+.it_bothers_me_item > span {
+  display: inline-block;
+  width: 94%;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0px 1px 15px rgba(17, 17, 17, 0.15));
+  border-radius: 25px;
+  text-align: center;
+  line-height: 16px;
+  color: #111111;
+  margin: 7px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #11111115;
+  transition: 0.2s;
+
+  overflow: visible;
+}
+
+.it_bothers_me_item > span:first-child {
+  margin-top: 10px;
+}
+
+.it_bothers_me_item > span:last-child {
+  margin-bottom: 10px;
+}
+
+.it_bothers_me_item .intro_txt_active {
+  color: rgb(240, 240, 240);
+  background-color: #8d9ace;
+  box-shadow: 0 0 25px #8d9ace94;
+  transition: 0.2s;
+}
+
+/* .it_bothers_me_item .i_dont_always_eat {
+  margin-left: 0;
+}
+.it_bothers_me_item .im_constantly_procrastinating {
+  margin-right: 0;
+} */
+
+
+
+/*Subscription*/
+.subscriptions {
+  margin-bottom: 48px;
+  margin-top: 48px;
+  overflow-x: hidden;
+}
+
+.subscriptions_title {
+  position: relative;
+  margin-bottom: 45px;
+  font-family: "Ubuntu Condensed";
+  text-align: center;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
+/*new*/
+/* .subscription_cnt {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+
+.subscriptions_list {
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 32px;
+  padding: 0;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.subscriptions_item {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 120px 16px 16px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2.5px solid #8d9ace;
+  border-radius: 25px;
+  background-image: url("../images/logo-vector.svg");
+  background-repeat: no-repeat;
+  background-position: center 32px;
+  background-size: 70px;
+}
+
+.subscriptions_item br {
+  display: none;
+}
+
+.subscriptions_item:nth-child(2) {
+  background-image: url("../images/logo-vectorBFA4CE.svg");
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); */
+}
+
+.subscriptions_item:last-child {
+  background-image: url("../images/logo-vector7264AA.svg");
+}
+
+.subscriptions_item-wrap {
+  flex: 1;
+}
+
+/* .subscriptions_item-title {
+  width: 130px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #111111;
+} */
+
+.subscriptions_item-info {
+  margin-bottom: 34px;
+}
+
+.subscriptions_item-duration {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #111111;
+}
+
+.subscriptions_item-price {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.subscriptions_item-trial,
+.subscriptions_price-month {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.subscriptions_item-trial {
+  margin-bottom: 6px;
+}
+
+.subscriptions_price-month {
+  display: none;
+}
+
+.subscriptions_item button {
+  min-width: 100%;
+  display: inline-block;
+  padding: 16px 15px;
+  margin-top: auto;
+  background: #7264aa;
+  border: 2px solid #7264aa;
+  border-radius: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.subscriptions p span {
+  font-size: 13px;
+  line-height: 16px;
+  color: #3f3176;
+}
+
+
+
+
+/*About*/
+
+.about {
+  margin-bottom: 48px;
+  color: #111111;
+}
+
+/* .about::before {
+  width: 100%;
+  height: calc(70vw / 2);
+  min-height: 167px;
+  display: block;
+  content: "";
+  background-image: url("../images/photo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+} */
+
+.about_wrap {
+  position: relative;
+  padding: 0 16px;
+}
+
+.about__image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about__image img {
+  width: 100%;
+}
+
+.about__image::before {
+  position: absolute;
+  left: 5%;
+  bottom: 3.2%;
+  display: block;
+  content: "";
+  width: 8%;
+  height: 6%;
+  border-radius: 2px;
+  background: #8d9ace;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.about_title {
+  font-family: "Ubuntu Condensed";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.about_description {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: justify;
+}
+
+.about_description p {
+  margin-top: 20px;
+}
+
+
+
+/*Less-more*/
+.less-more {
+  padding: 0 16px;
+  margin-bottom: 48px;
+  color: #111111;
+  text-align: justify;
+}
+
+.less-more_list {
+  padding-left: 0;
+}
+
+.less-more_title {
+  font-family: "Ubuntu Condensed";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.less-more_subtitle {
+  line-height: 16px;
+  margin-bottom: 34px;
+  font-size: 13px;
+}
+
+.less-more_subtitle p {
+  margin-top: 20px;
+}
+
+.less-more_subtitle > p > span {
+  display: block;
+  font-weight: bold;
+}
+
+.less-more_item {
+  position: relative;
+  padding-left: 86px;
+  margin-bottom: 34px;
+  margin-left: 17px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111111;
+  list-style-type: none;
+}
+
+.less-more_item::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  min-width: 64px;
+  height: 64px;
+  background-image: url("../images/logo_vector.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.less-more_item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 15px 0;
+}
+
+.less-more_item > ul > li,
+.less-more_item > ul > li > ul > li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.less-more_item > ul > li > ul {
+  margin-left: -14px;
+}
+
+.less-more_item > ul > li > span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.less-more_link {
+  max-width: 396px;
+  margin: 0 auto;
+  display: block;
+  padding: 12px;
+  margin-bottom: 34px;
+  background: #421dd8;
+  border: 2px solid #421dd8;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
+
+/*Reviews*/
+.reviews {
+  margin-bottom: 48px;
+  overflow: hidden;
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.trial-title {
+  margin-bottom: 20px; /* Добавлен отступ снизу для отзывов */
+}
+
+.reviews_title {
+  padding: 0 16px;
+  font-family: "Ubuntu Condensed";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.reviews_list {
+  margin-bottom: 55px;
+  /* display: grid;
+  min-width: 150%;
+  margin-left: -75%;
+  margin-bottom: 55px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px; */
+}
+/* .reviews_list .slick-track {
+  display: flex;
+  gap: 16px;
+} */
 
 
 /*Footer*/
