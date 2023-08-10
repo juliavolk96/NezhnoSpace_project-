@@ -6,8 +6,9 @@ import About from './components/About.jsx';
 import LessMore from './components/LessMore.jsx';
 import Reviews from './components/Reviews.jsx';
 import Footer from './components/Footer.jsx';
-import './components/style.css';
 import './components/mediaStyle.css';
+import './components/style.css';
+import './components/commonStyle.css';
 
 function App() {
   const menuItems = [
